@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Solutions4.Context;
@@ -15,10 +16,13 @@ namespace Solutions4.Controllers
     public class PatentesController : ControllerBase
     {
         private readonly SolutionsContext _context;
+        private readonly UserManager<IdentityUser> _userManager;
 
-        public PatentesController(SolutionsContext context)
+        public PatentesController(SolutionsContext context,
+            UserManager<IdentityUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: api/Patentes

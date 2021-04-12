@@ -10,6 +10,7 @@ namespace Solutions4.Model
     {
         [Key]
         public int Id { get; set; }
+        public Boolean Favorito { get; set; }
         public int NumeroPedido { get; set; }
         public string Titulo { get; set; }
         public string Regiao { get; set; }
@@ -17,7 +18,7 @@ namespace Solutions4.Model
         public DateTime DataPublicacao { get; set; }
         public DateTime DataEntradaNacional { get; set; }
         public string PaisPrioridade { get; set; }
-        public int NumeroPrioridade { get; set; }
+        public string NumeroPrioridade { get; set; }
         public DateTime DataPrioridade { get; set; }
         public string ClassificacaoIPC { get; set; }
         public string Depositante { get; set; }
@@ -28,7 +29,7 @@ namespace Solutions4.Model
         public int Despacho { get; set; }
         public string DescricaoDespacho { get; set; }
         public string ComplementoDespacho { get; set; }
-        public int NumeroPacote { get; set; }
+        public string NumeroPacote { get; set; }
         public DateTime DataPacote { get; set; }
         public string CodigoWO { get; set; }
         public DateTime DataWO { get; set; }

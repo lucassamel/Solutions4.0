@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Solutions4.Model;
 using System;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Solutions4.Context
 {
-    public class SolutionsContext : DbContext
+    public class SolutionsContext : IdentityDbContext
     {
         public SolutionsContext(DbContextOptions<SolutionsContext>options)
             : base(options) { }
