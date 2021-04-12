@@ -2,9 +2,11 @@
 
 ## Ecossistema de Patentes
 
-###Project Setup
-``` Nuget Package Manager 
+### Project Setup
+``` 
+Nuget Package Manager 
 add-migration inicial
+update-database
 ````
 
 
